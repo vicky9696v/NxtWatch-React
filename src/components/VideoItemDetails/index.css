@@ -1,0 +1,28 @@
+body {
+  margin: 0px;
+}
+
+.color-change {
+  color: #2563eb;
+}
+
+.button-change {
+  color: #64748b;
+}
+
+.white {
+  color: #fff;
+}
+.black {
+  color: #000;
+}
+
+.whiteBackground {
+  background-color: #fff;
+  color: #000;
+}
+
+.blackBackground {
+  background-color: #000;
+  color: #fff;
+}
