@@ -139,3 +139,39 @@ export const LoaderContainer = styled.div`
   align-items: center;
   justify-content: center;
 `
+export const BannerContainer = styled.div`
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+`
+
+export const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  height: 20px;
+`
+
+export const ImageBanner = styled.img`
+  height: 100%;
+  width: 70%;
+`
+export const ImageLogo = styled.img`
+  height: 35px;
+  width: 120px;
+`
+
+export const GetINowButton = styled.button`
+  height: 30px;
+  width: 120px;
+  background-color: transparent;
+`

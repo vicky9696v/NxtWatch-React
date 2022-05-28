@@ -69,7 +69,7 @@ export const ListMaintainContainer = styled.div`
   margin: 10px;
 `
 
-export const VideoHeading = styled.h1`
+export const VideoHeading = styled.p`
   color: ${props => props.color};
   font-size: 20px;
   font-family: 'Roboto';

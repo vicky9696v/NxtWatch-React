@@ -1,6 +1,7 @@
 import {Component} from 'react'
 import {Redirect} from 'react-router-dom'
 import Cookies from 'js-cookie'
+
 import {
   LoginMainContainer,
   LoginForm,
@@ -14,6 +15,8 @@ import {
   LabelForCheckBox,
   CheckBoxContainer,
 } from './styledComponent'
+
+import AppTheme from '../../Context/context'
 
 // const apiStatusConstants = {
 //   initial: 'INITIAL',
@@ -84,47 +87,69 @@ class Login extends Component {
     }
 
     return (
-      <LoginMainContainer>
-        <LoginForm onSubmit={this.onSubmitForm}>
-          <LoginImage
-            src="https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-light-theme-img.png"
-            alt="website logo"
-          />
-          <LabelForLogin htmlFor="user-name" className="label-name">
-            USERNAME
-          </LabelForLogin>
-          <UserNameInput
-            type="text"
-            id="user-name"
-            placeholder="Username"
-            onChange={this.onUserName}
-          />
-          <LabelForLoginTwo htmlFor="password" className="label-name1">
-            PASSWORD
-          </LabelForLoginTwo>
-          <UserNameInput
-            type={inputType}
-            id="password"
-            placeholder="Password"
-            onChange={this.onPassword}
-          />
-          <CheckBoxContainer>
-            <CheckBox
-              type="checkbox"
-              id="checkbox"
-              onChange={this.showPasswordFunction}
-            />{' '}
-            <LabelForCheckBox htmlFor="checkbox">
-              Show Password
-            </LabelForCheckBox>
-          </CheckBoxContainer>
+      <AppTheme.Consumer>
+        {value => {
+          const {activeTheme} = value
+          const color = activeTheme === 'light' ? '#000000' : '#ffffff'
+          const bgColor = activeTheme === 'light' ? '#f1f1f1' : '#0f0f0f'
+          const border = activeTheme === 'light' ? '#000' : '#7e858e'
+          return (
+            <LoginMainContainer bgColor={bgColor}>
+              <LoginForm
+                onSubmit={this.onSubmitForm}
+                bgColor={bgColor}
+                color={color}
+              >
+                <LoginImage
+                  src={
+                    activeTheme === 'light'
+                      ? 'https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-light-theme-img.png'
+                      : 'https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-dark-theme-img.png'
+                  }
+                  alt="website logo"
+                />
+                <LabelForLogin htmlFor="user-name" className="label-name">
+                  USERNAME
+                </LabelForLogin>
+                <UserNameInput
+                  type="text"
+                  id="user-name"
+                  placeholder="Username"
+                  onChange={this.onUserName}
+                  bgColor={bgColor}
+                  border={border}
+                />
+                <LabelForLoginTwo htmlFor="password" className="label-name1">
+                  PASSWORD
+                </LabelForLoginTwo>
+                <UserNameInput
+                  type={inputType}
+                  id="password"
+                  placeholder="Password"
+                  onChange={this.onPassword}
+                  bgColor={bgColor}
+                  border={border}
+                />
+                <CheckBoxContainer>
+                  <CheckBox
+                    type="checkbox"
+                    id="checkbox"
+                    onChange={this.showPasswordFunction}
+                  />{' '}
+                  <LabelForCheckBox htmlFor="checkbox">
+                    Show Password
+                  </LabelForCheckBox>
+                </CheckBoxContainer>
 
-          <LoginButton type="submit" className="button">
-            Login
-          </LoginButton>
-          {showError && <ErrorPara>* {error}</ErrorPara>}
-        </LoginForm>
-      </LoginMainContainer>
+                <LoginButton type="submit" className="button">
+                  Login
+                </LoginButton>
+                {showError && <ErrorPara>* {error}</ErrorPara>}
+              </LoginForm>
+            </LoginMainContainer>
+          )
+        }}
+      </AppTheme.Consumer>
     )
   }
 }

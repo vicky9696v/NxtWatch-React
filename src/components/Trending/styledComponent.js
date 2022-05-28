@@ -23,7 +23,7 @@ export const HomeMainContainer = styled.div`
 export const HomeMainContainerOne = styled.div`
   display: flex;
   flex-direction: row;
-
+  color: ${props => props.color};
   height: 100%;
   width: 100%;
 `

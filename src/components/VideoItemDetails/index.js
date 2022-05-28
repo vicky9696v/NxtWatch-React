@@ -4,7 +4,7 @@ import './index.css'
 import Loader from 'react-loader-spinner'
 import {BiLike, BiListPlus, BiDislike} from 'react-icons/bi'
 
-import ReactPlayer from 'react-player/lazy'
+import ReactPlayer from 'react-player'
 import Header from '../Header'
 import SideBar from '../SideBar'
 
@@ -281,7 +281,7 @@ class VideoItemDetails extends Component {
                     <hr />
                   </BottomContainer>
                   <ChannelContainer>
-                    <ChannelLogo src={profileLogo} alt={thumbNailUrl} />
+                    <ChannelLogo src={profileLogo} alt="channel logo" />
                     <ChannelNameContainer>
                       <Para>{name}</Para>
                       <Para>{subCount} Subscribers</Para>
@@ -322,6 +322,7 @@ class VideoItemDetails extends Component {
               <HomeResultContainer>
                 <SideBar />
                 <HomeMainContainer
+                  data-testid="videoItemDetails"
                   className={`${
                     activeTheme === 'light'
                       ? 'whiteBackground'

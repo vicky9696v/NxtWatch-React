@@ -116,9 +116,9 @@ class Trending extends Component {
           We are having some trouble to complete your request. <br />
           Please try again.
         </p>
-        <RetryButton type="button" onClick={this.getTrendingData}>
+        <button type="button" onClick={this.getTrendingData}>
           Retry
-        </RetryButton>
+        </button>
       </FailureContainer>
     </HomeMainContainerOne>
   )
@@ -147,6 +147,7 @@ class Trending extends Component {
               <Header />
 
               <HomeResultContainer
+                data-testid="gaming"
                 className={`${
                   activeTheme === 'light'
                     ? 'whiteBackground'

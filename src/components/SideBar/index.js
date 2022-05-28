@@ -15,6 +15,7 @@ import {
   ImagesContainer,
   LogoImage,
   Para,
+  LabelTag,
 } from './StyledComponent'
 
 const SideBar = () => (
@@ -41,7 +42,8 @@ const SideBar = () => (
                 }`}
               >
                 <HomeIconContainer>
-                  <AiFillHome size="25" /> Home
+                  <AiFillHome size="25" id="home" />{' '}
+                  <LabelTag htmlFor="home"> Home</LabelTag>
                 </HomeIconContainer>
               </ClickButton>
             </Link>
@@ -56,8 +58,8 @@ const SideBar = () => (
                 }`}
               >
                 <HomeIconContainer>
-                  <HiFire size="35" />
-                  Trending
+                  <HiFire size="25" id="Trend" />
+                  <LabelTag htmlFor="Trend"> Trending</LabelTag>
                 </HomeIconContainer>
               </ClickButton>
             </Link>
@@ -77,8 +79,8 @@ const SideBar = () => (
                 }`}
               >
                 <HomeIconContainer>
-                  <SiYoutubegaming size="22" />
-                  Gaming
+                  <SiYoutubegaming size="22" id="game" />
+                  <LabelTag htmlFor="game">Gaming</LabelTag>
                 </HomeIconContainer>
               </ClickButton>
             </Link>
@@ -93,7 +95,7 @@ const SideBar = () => (
               >
                 <HomeIconContainer>
                   <BiListPlus id="save" size="25" />
-                  Saved Videos
+                  <LabelTag htmlFor="save">Saved Videos</LabelTag>
                 </HomeIconContainer>
               </ClickButton>
             </Link>

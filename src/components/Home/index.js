@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
 import {BsSearch} from 'react-icons/bs'
+import {ImCross} from 'react-icons/im'
 import Header from '../Header'
 import SideBar from '../SideBar'
 import AppTheme from '../../Context/context'
@@ -28,6 +29,12 @@ import {
   FailureImage,
   RetryButton,
   LoaderContainer,
+  BannerContainer,
+  TextContainer,
+  ButtonContainer,
+  ImageBanner,
+  ImageLogo,
+  GetINowButton,
 } from './styledComponent'
 
 const apiStatusConstants = {
@@ -42,6 +49,7 @@ class Home extends Component {
     search: '',
     dataListItems: [],
     apiStatus: apiStatusConstants.initial,
+    display: 'flex',
   }
 
   componentDidMount() {
@@ -123,12 +131,12 @@ class Home extends Component {
                         >
                           <ThumbNailImg
                             src={each.thumbNailUrl}
-                            alt={each.title}
+                            alt="video thumbnail"
                           />
                           <ChannelLogoContainer>
                             <ChannelImg
                               src={each.channel.profileLogo}
-                              alt={each.name}
+                              alt="channel logo"
                             />
                             <VideoHeading
                               style={{
@@ -217,9 +225,9 @@ class Home extends Component {
                   >
                     Try different key words or remove search filter
                   </p>
-                  <RetryButton type="button" onClick={this.searchResults}>
+                  <button type="button" onClick={this.searchResults}>
                     Retry
-                  </RetryButton>
+                  </button>
                 </FailureContainer>
               </HomeMainContainerOne>
             </>
@@ -278,7 +286,7 @@ class Home extends Component {
           return (
             <div>
               <Header />
-              <HomeResultContainer>
+              <HomeResultContainer data-testid="home">
                 <SideBar />
                 <HomeMainContainer
                   className={`${
@@ -287,7 +295,39 @@ class Home extends Component {
                       : 'blackBackground'
                   }`}
                 >
+                  <BannerContainer data-testid="banner">
+                    <TextContainer>
+                      <ImageLogo
+                        src="https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-light-theme-img.png"
+                        alt="nxt watch logo"
+                      />
+                      <p style={{color: '#000'}}>
+                        Buy Nxt Watch premium prepaid plans with <br />
+                        UPI
+                      </p>
+                      <GetINowButton type="button">GET IT NOW</GetINowButton>
+                    </TextContainer>
+                    <ImageBanner
+                      src="https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png"
+                      alt="Banner Background"
+                    />
+                    <ButtonContainer>
+                      <button
+                        data-testid="close"
+                        style={{
+                          background: 'transparent',
+                          border: 'transparent',
+                          cursor: 'pointer',
+                          outline: 'none',
+                        }}
+                        type="button"
+                      >
+                        <ImCross />
+                      </button>
+                    </ButtonContainer>
+                  </BannerContainer>
                   <SearchContainer
+                    data-testid="searchButton"
                     className={`${
                       activeTheme === 'light'
                         ? 'whiteBackground'

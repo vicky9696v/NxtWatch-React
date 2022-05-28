@@ -8,7 +8,7 @@ export const LoginMainContainer = styled.div`
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background: #f1f5f9;
+  background: ${props => props.bgColor};
 `
 
 export const LoginForm = styled.form`
@@ -17,10 +17,16 @@ export const LoginForm = styled.form`
 
   height: 45vh;
   width: 35vw;
-  background: #ffffffff;
+  color: ${props => props.color};
+  background: ${props => props.bgColor};
   border-radius: 8px;
   box-shadow: 0px 2px 2px 2px;
-  padding: 3%;
+  padding: 2%;
+  @media (max-width: 768px) {
+    height: 55vh;
+    width: 90vw;
+    justify-content: center;
+  }
 `
 
 export const LoginImage = styled.img`
@@ -32,35 +38,52 @@ export const LabelForLogin = styled.label`
   font-size: 13px;
   font-family: 'Roboto';
   align-self: flex-start;
-  margin-top: 5%;
+  font-family: 'Bree Serif';
+  margin-top: 2%;
+  @media (max-width: 768px) {
+    font-size: 19px;
+  }
 `
 
 export const LabelForLoginTwo = styled.label`
   font-size: 13px;
   font-family: 'Roboto';
   align-self: flex-start;
+  font-family: 'Bree Serif';
   margin-top: 1%;
+  @media (max-width: 768px) {
+    font-size: 19px;
+  }
 `
 
 export const UserNameInput = styled.input`
-  height: 30px;
+  height: 40px;
   width: 80%;
   align-self: flex-start;
   margin-top: 4px;
   margin-bottom: 4px;
   outline: none;
-  padding: 5px;
-  border: 1px solid #7e858e;
+  padding: 10px;
+  border: 1px solid ${props => props.border};
+  font-family: 'Bree Serif';
   border-radius: 2px;
+  background: ${props => props.bgColor};
+  @media (max-width: 768px) {
+    height: 40px;
+    width: 90%;
+    font-size: 16px;
+    font-family: 'Bree Serif';
+  }
 `
 export const ErrorPara = styled.p`
   color: red;
   font-family: 'Roboto';
-  font-size: 12px;
+  font-size: 15px;
+  font-family: 'Bree Serif';
 `
 export const LoginButton = styled.button`
   margin-top: 10px;
-  height: 30px;
+  height: 40px;
   width: 150px;
   border-radius: 7px;
   cursor: pointer;
@@ -68,6 +91,12 @@ export const LoginButton = styled.button`
   background-color: #6366f1;
   color: #ffffff;
   border: transparent;
+  font-family: 'Bree Serif';
+  @media (max-width: 768px) {
+    height: 40px;
+    width: 90%;
+    font-size: 17px;
+  }
 `
 
 export const CheckBoxContainer = styled.div`
@@ -84,5 +113,6 @@ export const CheckBox = styled.input`
 
 export const LabelForCheckBox = styled.label`
   font-family: 'Rpboto';
-  font-size: 17px;
+  font-size: 14px;
+  font-family: 'Bree Serif';
 `

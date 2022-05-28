@@ -18,7 +18,6 @@ export const HomeIconContainer = styled.div`
   width: 70%;
   font-size: 15px;
   align-items: center;
-  justify-content: space-around;
 `
 
 export const LabelTag = styled.label`
@@ -26,6 +25,7 @@ export const LabelTag = styled.label`
   cursor: pointer;
   font-size: 17px;
   width: 40%;
+  margin-left: 15px;
 `
 
 export const ClickButton = styled.button`

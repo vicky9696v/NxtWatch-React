@@ -18,7 +18,7 @@ import {
   ItemsContainer,
   FailureContainer,
   FailureImage,
-  RetryButton,
+  //   RetryButton,
   LoaderContainer,
   PublishedDate,
   LogoMainContainer,
@@ -39,6 +39,7 @@ class Trending extends Component {
   state = {
     trendingList: [],
     apiStatus: apiStatusConstants.initial,
+    activeColor: '#000',
   }
 
   componentDidMount() {
@@ -79,10 +80,10 @@ class Trending extends Component {
   }
 
   renderResults = () => {
-    const {trendingList} = this.state
+    const {trendingList, activeColor} = this.state
 
     return (
-      <HomeMainContainerOne>
+      <HomeMainContainerOne color={activeColor}>
         <HomeUnOrderList>
           {trendingList.map(each => (
             <TrendingList key={each.id}>
@@ -124,9 +125,9 @@ class Trending extends Component {
           We are having some trouble to complete your request. <br />
           Please try again.
         </p>
-        <RetryButton type="button" onClick={this.getTrendingData}>
+        <button type="button" onClick={this.getTrendingData}>
           Retry
-        </RetryButton>
+        </button>
       </FailureContainer>
     </HomeMainContainerOne>
   )
@@ -151,13 +152,16 @@ class Trending extends Component {
         {value => {
           const {activeTheme} = value
           const color = activeTheme === 'light' ? '#0f0f0f' : '#fff'
+
           return (
             <>
               <Header />
               <HomeResultContainer>
                 <SideBar />
                 <HomeMainContainer
-                  bgColor={`${activeTheme === 'light' ? '#' : '#0f0f0f'} `}
+                  bgColor={`${
+                    activeTheme === 'light' ? '#0f0f0f' : '#f1f1f1'
+                  } `}
                   color={color}
                 >
                   <LogoMainContainer color={color}>

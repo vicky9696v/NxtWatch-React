@@ -51,6 +51,7 @@ const SavedVideosList = () => (
                 />
                 <Heading color={color}>No saved videos found</Heading>
                 <NotResultsPara color={color}>
+                  <p>Save your videos by clicking a button</p>
                   You can save your videos while watching
                 </NotResultsPara>
               </SavedVideoContainer>
@@ -69,7 +70,7 @@ const SavedVideosList = () => (
                   size="27"
                   color={activeTheme === 'light' ? '#000' : ' #ff0000'}
                 />
-                <h1>Gaming</h1>
+                <h1>Saved Videos</h1>
               </LogoMainContainer>
               <UnOrderList>
                 {savedVideos.map(each => (
@@ -81,7 +82,7 @@ const SavedVideosList = () => (
                       <ListMaintainContainer>
                         <ImageThumbNail
                           src={each.thumbNailUrl}
-                          alt={each.title}
+                          alt="video thumbnail"
                         />
                         <TextContainer>
                           <VideoHeading color={color}>
