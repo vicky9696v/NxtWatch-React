@@ -10,7 +10,7 @@
 ### Completion Instructions
 
 <details>
-<summary>Functionality to be added</summary>
+<summary>Functionalities</summary>
 <br/>
 
 The app have the following functionalities
