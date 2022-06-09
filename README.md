@@ -289,21 +289,7 @@ Returns a response containing the list of gaming videos
 
 - To build this project, take a look at the <a href='https://learning.ccbp.in/frontend-development/course?c_id=2f4192f7-7495-49ca-a6ce-6b74005e25f1&s_id=b01fca1c-aa5c-4d79-b81e-0220e7649bd0&t_id=416f0cab-8425-413b-9157-c7b4d4ae4467' target="_blank">React Popup</a> and <a href='https://learning.ccbp.in/frontend-development/course?c_id=2f4192f7-7495-49ca-a6ce-6b74005e25f1&s_id=b6392b63-25f6-4215-be09-9f23ad91d789&t_id=416f0cab-8425-413b-9157-c7b4d4ae4467' target="_blank">React Video Player</a> reading materials
 
-- To style popup content use `.popup-content` class
 
-```jsx
-<Popup
-  modal
-  trigger={
-    //write code here
-  }
-  className="popup-content"
->
-  //write code here
-</Popup>
-```
-
-- Use `formatDistanceToNow` function to find the difference between the given date and now in words.
 
 ```jsx
 import {formatDistanceToNow} from 'date-fns'
@@ -320,7 +306,7 @@ console.log(formatDistanceToNow(new Date(2021, 8, 20)))
 
 <br/>
 
-**The following instructions are required for the tests to pass**
+**Paths having this app**
 
 - `Home` route should consist of `/` in the URL path
 - `Login` route should consist of `/login` in the URL path
@@ -337,68 +323,6 @@ console.log(formatDistanceToNow(new Date(2021, 8, 20)))
    password: rahul@2021
 
   ```
-
-- Wrap the `Loader` component with an HTML container element and add the `data-testid` attribute value as `loader` to it
-
-  ```jsx
-  <div className="loader-container" data-testid="loader">
-    <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
-  </div>
-  ```
-
-- The HTML button element in Home Route has the `data-testid` attribute value as `searchButton` to it
-
-- **Styled Components** should be used for styling purposes.
-- The theme button should have the `data-testid` as `theme`.
-- The Sidebar should consists of
-  - Facebook logo
-  - Twitter Logo
-- Each Route consists of respective banner as shown in the design files and it should have the `data-testid` as `banner`.
-- The thumbnail images in the Route should have the alt attribute value as **video thumbnail**.
-- The channel logo images in Home Route should have the alt attribute value as **channel logo**.
-
-- **Home Route**
-
-  - The Route should consist of an HTML container element with `data-testid` as `home`.
-  - The Route should consist of an HTML image element with attribute value as `nxt watch logo` and src as the value of the given nxt watch logo URL should be displayed in the banner.
-  - The Route should consist of a banner and it contains a close button element with `data-testid` as `close`.
-  - The HTML container element with `data-testid` as `home` should have the background color.
-    - If the Dark theme is applied, then the **#181818** color should be applied as a background-color.
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background-color.
-
-- **Trending Route**
-
-  - The Route should consist of an HTML container element with `data-testid` as `trending`.
-  - The HTML container element with `data-testid` as `trending` should maintain the background color theme.
-    - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background-color.
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background-color.
-
-- **Gaming Route**
-
-  - The Route should consist of an HTML container element with `data-testid` as `gaming`.
-  - The HTML container element with `data-testid` as `gaming` should maintain the background color theme.
-    - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background-color.
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background-color.
-
-- **SavedVideos Route**
-
-  - The **SavedVideos** Route should consist of an HTML container element with `data-testid` as `savedVideos`.
-  - The HTML container element with `data-testid` as `savedVideos` should maintain the background color theme.
-    - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background-color.
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background-color.
-
-- **VideoItemDetails Route**
-
-  - The **VideoItemDetails** Route should consist of an HTML container element with `data-testid` as `videoItemDetails`.
-  - The HTML container element with `data-testid` as `videoItemDetails` should maintain the background color theme.
-    - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background-color.
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background-color.
-
-- The **Website Logo** image for Light theme and Dark theme should have the alt attribute value as `website logo`
-- The **Failure** image for Light theme and Dark theme should have the alt attribute value as `failure view`
-- The **Not found** image for Light theme and Dark theme should have the alt attribute value as `not found`
-- In the **VideoItemDetails** Route, the **#2563eb** color should be applied as `color` for any button i.e (Like, Dislike, Save) if the button is active.
-- In the **VideoItemDetails** Route, the **#64748b** color should be applied as `color` for any button i.e (Like, Dislike, Save) if the button is inactive.
 
 </details>
 
